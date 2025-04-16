@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Demo</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+            padding: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .dynamic-box {
+            border: 2px solid #333;
+            padding: 15px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DOM Manipulation Demo</h1>
+        </header>
+
+        <main>
+            <section id="text-section">
+                <h2>Dynamic Text Change</h2>
+                <p id="changeable-text">This text will change when you click the button!</p>
+                <button onclick="changeText()">Change Text</button>
+            </section>
+
+            <section id="style-section">
+                <h2>Style Manipulation</h2>
+                <div id="style-box" class="dynamic-box">
+                    This box will change its style
+                </div>
+                <button onclick="toggleStyle()">Toggle Style</button>
+            </section>
+
+            <section id="element-section">
+                <h2>Add/Remove Elements</h2>
+                <div id="element-container"></div>
+                <button onclick="addElement()">Add Element</button>
+                <button onclick="removeElement()">Remove Element</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>Created for DOM Manipulation Practice</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
